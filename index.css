@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Instagramfont';
+    src: url('fonts/Billabong.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: linear-gradient(-45deg, rgb(120, 12, 228), rgb(242, 19, 19));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: twinkling 5s infinite;
+}
+
+@keyframes twinkling {
+    0%, 100% {
+        background-size: 100% 100%;
+    }
+    50% {
+        background-size: 150% 150%;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 320px;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    height: 550px;
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+}
+
+.card h1 {
+    margin: 0;
+    color: rgb(209, 188, 188);
+    font-family: Instagramfont;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.card img {
+    height: auto;
+    width: 75px;
+}
+
+.Inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Username {
+    width: auto;
+    height: 30px;
+    border-radius: 7px;
+    border: 0px;
+    text-align: center;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.button1{
+    width: auto;
+    height: 30px;
+    border-radius: 7px;
+    border: 0px;
+    margin-top: 10px;
+    padding: auto;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: #0095F6;
+    color: white;
+}
+
+.no-underline{
+    text-decoration: none;
+}
+.Border{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(209, 188, 188);
+}
+
+.Border span{
+    color: white;
+}
+.Footer{
+    border-top: 1px solid white;
+    margin: 0;
+}
+.buttonbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.buttoncontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
